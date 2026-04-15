@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styleLogin.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <img src="../assets/images/loginPage/logo-dhv.png" class="logo">
+                <div class="title">
+                    <p id="title-vi">TRƯỜNG ĐẠI HỌC VINH</p>
+                    <p id="title-en">Vinh University</p>
+                </div>
+            </div >
+                <p id="guide">Đăng nhập vào hệ thống</p>
+                <div class="text-inp">
+                    <input class="inp" id="acc" type="text" placeholder="Tên đăng nhập hoặc email">
+                    <input class="inp" id="pass" type="password" placeholder="Mật khẩu">
+                </div>
+            <div id="pass-mem">
+                <input type="checkbox" id="check-box">
+                <label for="check-box">Nhớ mật khẩu</label>
+            </div>
+            <div class="function">
+                <button class="btn" id="login-btn" onclick="login()">Đăng nhập</button>
+                <button class="btn" id="forgot-btn">Quên mật khẩu?</button>
+            </div>
+
+        </div>
+        <script src="logScript.js"></script>
+    </body>
+</html>

@@ -1,0 +1,223 @@
+body {
+    background-image: url("../assets/images/loginPage/bg.png");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(217, 217, 217, 0.5);
+    width: 80%;
+    min-height: 80vh;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10vw;
+}
+
+.title {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#title-vi, #title-en {
+    margin: 0;
+    line-height: 1.2;
+}
+
+#title-vi {
+    font-weight: bold;
+    font-size: clamp(1rem, 4vw, 2rem);
+}
+
+#title-en {
+    font-weight: 100;
+}
+
+.logo {
+    width: 50px;
+    aspect-ratio: 1;
+}
+
+#guide {
+    width: 60vw;
+    margin-top: 20vw;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.text-inp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.inp {
+    width: 60vw;
+    padding: 16px 12px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px solid #7A7C85;
+    box-sizing: border-box;
+}
+
+
+
+.inp::placeholder {
+    font-size: 20px;
+}
+
+#pass-mem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 62vw;
+    margin-top: 10px;
+}
+
+#check-box {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+label[for="check-box"] {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 75%;
+}
+
+button:active {
+    opacity: 50%;
+}
+
+.function {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.btn {
+    width: 60vw;
+
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+}
+
+#login-btn {
+    background-color: #065FD5;
+    color: white;
+    
+}
+
+#forgot-btn {
+    background: none;
+}
+@media (min-width: 768px) {
+    .main {
+        width: 70%;
+        min-height: 70vh;
+    }
+    
+    #guide {
+        width: 55vw;
+        margin-top: 5vw;
+        font-size: 1.1rem;
+    }
+    
+    .inp {
+        width: 55vw;
+        font-size: 18px;
+    }
+    
+    .inp::placeholder {
+        font-size: 18px;
+    }
+    
+    #pass-mem {
+        width: 57vw;
+    }
+    
+    .btn {
+        width: 55vw;
+        font-size: 1.1rem;
+        padding: 14px;
+    }
+    
+    .logo {
+        width: 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main {
+        width: 30vw;
+        min-height: 75vh;
+    }
+    
+    .header {
+        margin-top: 25px;
+    }
+
+    #title-vi {
+        font-size: clamp(1rem, 1.5vw, 2rem);
+    }
+
+    #guide {
+        width: 25vw;
+        font-size: 1.2rem;
+    }
+    
+    .inp {
+        width: 25vw;
+        font-size: 16px;
+    }
+    
+    .inp::placeholder {
+        font-size: 16px;
+    }
+    
+    #pass-mem {
+        width: 25vw;
+    }
+    
+    .btn {
+        width: 25vw;
+        font-size: 1rem;
+        padding: 12px;
+    }
+    
+    .logo {
+        width: 70px;
+    }
+}
